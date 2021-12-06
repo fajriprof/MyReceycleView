@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyReceycleView</string>
+    <string name="kopi_name">Nama Kopi Kekinian</string>
+    <string name="detail">Detail</string>
+    <string name="title_bio">Biodata</string>
+    <string name="nama">Nama : </string>
+    <string name="isi_nama">Fajri Profesio Putra</string>
+    <string name="email">Email : </string>
+    <string name="isi_email">fajri.ilkom@gmail.com</string>
+</resources>
