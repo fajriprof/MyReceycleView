@@ -12,13 +12,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/fajri"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:scaleType="fitCenter"
             android:src="@drawable/fajri1" />
 
         <FrameLayout

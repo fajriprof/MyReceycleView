@@ -48,6 +48,9 @@ class MainActivity : AppCompatActivity() {
         list.addAll(KopiData.listData)
         showRecyclerList()
 
+        val actionBar = supportActionBar
+        actionBar!!.title = "Varian Kopi"
+
 
     }
 

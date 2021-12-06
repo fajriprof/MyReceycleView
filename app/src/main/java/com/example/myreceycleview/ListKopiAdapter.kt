@@ -1,5 +1,6 @@
 package com.example.myreceycleview
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -26,6 +27,19 @@ class ListKopiAdapter (private val listKopi: ArrayList<Kopi>) : RecyclerView.Ada
             .into(holder.imgPhoto)
         holder.tvName.text = kopi.name
         holder.tvDetail.text = kopi.detail
+
+        val mContext = holder.itemView.context
+
+        holder.itemView.setOnClickListener {
+            val intent= Intent(mContext,DetailActivity::class.java)
+            intent.putExtra(DetailActivity.EXTRA_NAME, kopi.name)
+            intent.putExtra(DetailActivity.EXTRA_DESKRIPSI, kopi.detail)
+            intent.putExtra(DetailActivity.EXTRA_PHOTO, kopi.photo)
+            mContext.startActivity(intent)
+        }
+
+
+
     }
 
     override fun getItemCount(): Int {
